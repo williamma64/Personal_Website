@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <h2>Please fill out this form</h2>
+    <br />
+    <form action="http://www.example.com/login.php">
+      <p>Username: 
+        <input type="text" name="username" maxlength="30"/>
+      </p>
+      <p>Password:
+        <input type="Password" name="Password" maxlength="30"/>
+      </p>
+    </form>
+    <p>What do you think of this website?</p>
+    <textarea name="comments" cols="50" rows="4">This is the best!</textarea>
+    <p>Which is your favorite website?</p>
+    <input type="radio" name="website" value="this" checked="checked"/>this
+    <input type="radio" name="website" value="this"/> this
+    <input type="radio" name="website" value="this"/> this
+    <input type="checkbox" name="website" value="this"/> this
+    <input type="checkbox" name="website" value="this"/> this
+    <select name="website">
+      <option value="this">this</option>
+      <option value="this">this</option>
+      <option value="this">this</option>	
+    </select>
+    <input type="submit" name="good?" value="Tell me the good news" />
+  </body>
+</html>
