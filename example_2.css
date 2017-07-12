@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(200,200,200);}
+/* color name */
+h1 {
+  color: DarkCyan;
+  opacity: 0.5;
+  background-color: #c8c8c8;}
+/* hex code */
+h2 {
+  color: #ee3e80;
+  background-color: #ffffff;}
+/* rgb value */
+p {
+  color: rgb(100, 100, 90);}
