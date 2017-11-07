@@ -1,8 +1,13 @@
 body {
   font-family: consolas, monospace;
 }
+.page {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 h1 {
-  padding: 5px;
+  padding: 0px;
   text-align: center;
   width: 80%;
   margin: 0.5em auto 0.5em auto;
@@ -17,7 +22,8 @@ nav {
 }
 .nav_links:hover {
   color: #ff7070;
-  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
 }
 #introduction {
   height: 30em;

@@ -7,7 +7,7 @@ body {
   overflow: hidden;
 }
 h1 {
-  padding: 5px;
+  padding: 0px;
   text-align: center;
   width: 80%;
   margin: 0.5em auto 0.5em auto;
@@ -29,12 +29,11 @@ nav {
 }
 .nav_links {
   color: black;
-  -webkit-transition: color 0.5s ease-out;
-  -webkit-transition: background-color 0.5s ease-out;
+  transition: all 0.5s ease-in;
 }
 .nav_links:hover {
+  -webkit-transition: color 0.5s ease-in;
   color: #ff7070;
-  background-color: black;
 }
 #curr_html {
   color: #ff7070;
@@ -52,7 +51,7 @@ a {
 .project_wrapper {
   width: 100%;
   padding: 0px 17px 0px 0px;
-  height: 550px;
+  height: 600px;
   overflow-y: scroll;
 }
 p {

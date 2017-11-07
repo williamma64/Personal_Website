@@ -1,14 +1,19 @@
 body {
   font-family: consolas, monospace;
 }
+.page {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 h1 {
-  padding: 5px;
+  padding: 0px;
   text-align: center;
   width: 80%;
   margin: 0.5em auto 0.5em auto;
 }
 nav {
-  font-size: 16px;
+  font-size: 16px;  
   text-align: center;
   margin: 0px auto 0px auto;
   height: 2em;
@@ -17,9 +22,10 @@ nav {
 }
 .nav_links:hover {
   color: #ff7070;
-  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s ;
 }
-a {
+a.nav_links {
   display: inline-block;
   height: 1.75em;
   width: 100px;
@@ -31,4 +37,54 @@ a {
 }
 #curr_html {
   color: #ff7070;
+}
+h2 {
+  margin-left: 10%;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  padding-left: 2%;
+}
+#res_wrapper {
+  width: 100%;
+  padding: 0px 17px 0px 0px;
+  height: 600px;
+  overflow-y: scroll;
+}
+#skills {
+  width: 50%;
+  margin: 1% auto 1% auto; 
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #91beff;
+}
+ul.prof {
+  -webkit-column-count: 2;
+  column-count: 2;
+  column-gap: 20px;
+}
+#courses {
+  width: 50%;
+  margin: 1% auto 1% auto;
+  display: block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #91beff;
+}
+#x_info {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+p {
+  line-height: 20px;
+  margin: 5px 0% 5px 2%;
+  font-size: 0.85em;
+}
+#res_dl {
+  color: #ff7070;
+  text-decoration: none;
 }

@@ -7,52 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="author" content="William Ma">
+    <link rel="stylesheet" type="text/css" href="./contact.css">
   </head>
 
   <body>
     <div class="page" id="contact">
       <header>
-        <h1>Talk to me</h1>
+        <h1>William Ma</h1>
         <nav>
-          <a href="./home.html">Home</a>
-          <a href="./portfolio.html">Portfolio</a>
-          <a href="./resume.html">Resume</a>
-          <a class="curr_page">Contact</a>
+          <a class="nav_links" href="./home.html">HOME</a>
+          <a class="nav_links" href="./portfolio.html">PORTFOLIO</a>
+          <a class="nav_links" href="./resume.html">RESUME</a>
+          <a class="nav_links" id="curr_html">CONTACT</a>
         </nav>
       </header>
-      <section id="info">
-        <h2>I want to hear from you</h2>
-        <p>Please contact me with any questions or comments you have for me. I am happy to help.</p>
-        <h3>Contact Information</h3>
-        <p>8875 Costa Verde Blvd</p>
-        <p>San Diego, CA 92122</p>
-        <p>916-595-1385</p>
-        <a href="mailto:william.ma64@gmail.com">william.ma64@gmail.com</a>
-      </section>
-      <!--<form action="http://www.williamma.com/login.js"> -->
-        <h5>Full Name*</h5>
-        <p>With whom am I speaking to?</p>
-        <div id="firstname">
-          <p>First Name</p>
-          <input type="text" name="first_name" maxlength="30" size="15">
+      <div id="con">
+        <div id="info">
+          <h2>I want to hear from you</h2>
+          <p>Please contact me with any questions or comments you have for me. I am happy to help.</p>
+          <h3>Contact Information</h3>
+          <p>8875 Costa Verde Blvd</p>
+          <p>San Diego, CA 92122</p>
+          <p>916-595-1385</p>
+          <a href="mailto:william.ma64@gmail.com">william.ma64@gmail.com</a>
         </div>
-        <div id="lastname">
-          <p>Last Name</p>
-          <input type="text" name="last_name" maxlength="30" size="15">
+        <div id="input">
+          <!--<form action="http://www.williamma.com/login.js"> -->
+          <h5>Full Name*</h5>
+          <p>With whom am I speaking to?</p>
+          <div id="firstname">
+            <p>First Name</p>
+            <input type="text" name="first_name" maxlength="30" size="15">
+          </div>
+          <div id="lastname">
+            <p>Last Name</p>
+            <input type="text" name="last_name" maxlength="30" size="15">
+          </div>
+          <div id="email">
+            <p>Email Address*</p>
+            <input type="text" name="email_address" maxlength="50" size="15">
+          </div>
+          <div id="message">
+            <p>Your message*</p>
+            <textarea name="email_message" cols="100 rows 6"></textarea>
+          </div>
+          <div id="send_message">
+            <p>Send Message</p>
+          </div>
+        <!--/form-->
         </div>
-        <div id="email">
-          <p>Email Address*</p>
-          <input type="text" name="email_address" maxlength="50" size="15">
-        </div>
-        <div id="message">
-          <p>Your message*</p>
-          <textarea name="email_message" cols="100 rows 6"></textarea>
-        </div>
-        <div id="send_message">
-          <p>Send Message</p>
-        </div>
-      <!--/form-->
+      </div>
     </div>
-
   </body>
 </html>

@@ -1,0 +1,40 @@
+body {
+  font-family: consolas, monospace;
+}
+.page {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+h1 {
+  padding: 0px;
+  text-align: center;
+  width: 80%;
+  margin: 0.5em auto 0.5em auto;
+}
+nav {
+  font-size: 16px;  
+  text-align: center;
+  margin: 0px auto 0px auto;
+  height: 2em;
+  padding-bottom: 1em;
+  min-width: 400px;
+}
+.nav_links:hover {
+  color: #ff7070;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s ;
+}
+a.nav_links {
+  display: inline-block;
+  height: 1.75em;
+  width: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  padding-top: 0.75em;
+  color: black;
+}
+#curr_html {
+  color: #ff7070;
+}
