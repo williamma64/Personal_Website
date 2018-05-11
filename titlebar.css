@@ -1,0 +1,22 @@
+.navbar-text {
+    font-size: 2em !important;
+    margin: 0;
+    padding: 0;
+    color: black !important;
+}
+.nav-link:hover {
+    color: #ff7070 !important;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s ;
+}
+.navbar {
+    margin-bottom: 20px;
+    width: 80%;
+    margin: auto auto auto auto;
+}
+.active {
+    color: #ff7070 !important;
+}
+body {
+    width: 100%;
+}
