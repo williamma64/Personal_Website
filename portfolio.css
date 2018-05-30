@@ -1,42 +1,9 @@
-body {
-  font-family: consolas, monospace;
-}
-.page {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
-h1 {
-  padding: 0px;
-  text-align: center;
-  width: 80%;
-  margin: 0.5em auto 0.5em auto;
-}
 h4 {
   text-align: center;
 }
 h3, h5 {
   width: 80%;
   margin-left: 10%;
-}
-nav {
-  font-size: 16px;
-  text-align: center;
-  margin: 0px auto 0px auto;
-  height: 2em;
-  padding-bottom: 1em;
-  min-width: 400px;
-}
-.nav_links {
-  color: black;
-  transition: all 0.5s ease-in;
-}
-.nav_links:hover {
-  -webkit-transition: color 0.5s ease-in;
-  color: #ff7070;
-}
-#curr_html {
-  color: #ff7070;
 }
 a {
   display: inline-block;
@@ -50,9 +17,7 @@ a {
 }
 .project_wrapper {
   width: 100%;
-  padding: 0px 17px 0px 0px;
-  height: 600px;
-  overflow-y: scroll;
+  height: 100%;
 }
 p {
   text-indent: 30px;

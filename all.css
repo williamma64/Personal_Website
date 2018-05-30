@@ -1,0 +1,23 @@
+body {
+  font-family: Calibri, san-serif;
+  width: 90%;
+  margin: 0px auto 0px auto;
+}
+nav {
+  font-size: 16px;
+  text-align: center;
+  margin: 0px auto 0px auto;
+  height: 2em;
+  padding-bottom: 1em;
+}
+.name{
+  font-size: 21px !important;
+}
+.nav_links:hover {
+  color: #ff7070;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+#curr_html {
+  color: #ff7070;
+}
