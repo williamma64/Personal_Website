@@ -17,18 +17,56 @@ a {
 }
 .project_wrapper {
   width: 100%;
-  height: 100%;
+  height: 600px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 p {
   text-indent: 30px;
   font-size: 14px;
 }
 .project_overview {
-  font-style: italic;
   width: 80%;
   margin: 0px auto 0px auto;
 }
 .project_description {
   width: 80%;
   margin: 0px auto 0px auto;
+}
+
+#Project_Drive {
+  background-color: lightgray;
+  align-content: center;
+}
+
+.drive-picture {
+  float: left;
+  padding-top: 4%;
+  padding-left: 14%;
+}
+
+.project-drive-wrapper {
+  float: left;
+  width: 40%;
+}
+
+.website-project-wrapper {
+  display: inline-block;
+}
+
+.website-project-wrapper {
+  display: inline-block;;
+  float: left;
+  width: 40%;
+  padding-left: 10%;
+  padding-top: 3%;
+}
+.website-picture {
+  display: inline-block;;
+  float: left;
+  padding-top: 3%;
+}
+
+.link {
+  color: #ff7070;
 }

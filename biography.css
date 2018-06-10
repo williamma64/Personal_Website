@@ -2,14 +2,21 @@
   box-sizing: border-box;
 }
 
-a {
-  display: inline-block;
-  height: 1.75em;
-  width: 7%;
-  margin-left: 4%;
-  margin-right: 4%;
-  text-decoration: none;
-  padding-top: 0.75em;
-  color: black;
+#bio {
+  text-align: left;
+  font-size: 14px;
+  margin: 3% auto 0px auto;
+  width: 60%;
 }
 
+.pic {
+  margin: 3% auto 0px auto;
+  display: block;
+}
+
+.biography-wrapper {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 1.5%;
+  width: 100% !important;
+}

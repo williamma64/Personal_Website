@@ -1,39 +1,34 @@
-* {
-  box-sizing: border-box;
-}
-
 #introduction {
   height: 30em;
-  margin: 0px auto 10px auto;
+  margin: 1% auto 10px auto;
 }
+
+.pic {
+  float: right;
+  border-radius: 15%;
+}
+
 #picture {
-  width: 40%;
+  width: 45%;
   float: left;
-  padding: 2.5%;
+  align-content: right;
+  padding-right: 5%;
+  padding-top: 1.5%;
 }
+
 #intro_des {
   height: 100% - width;
   margin-top: 5%;
-  width: 55%;
+  width: 45%;
   text-align: left;
   line-height: 15px;
   float: left;
-}
-a {
-  display: inline-block;
-  height: 1.75em;
-  width: 100px;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-decoration: none;
-  padding-top: 0.75em;
-  color: black;
 }
 
 ul {
   list-style-type: none;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 14px;
   border-left-style: solid;
   border-width: 1px;
   border-color: #d1d1d1;

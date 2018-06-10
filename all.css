@@ -1,17 +1,32 @@
 body {
-  font-family: Calibri, san-serif;
-  width: 90%;
+  font-family: Arial, san-serif;
+  width: 100%;
   margin: 0px auto 0px auto;
 }
+
+a {
+  display: inline-block;
+  height: 1.75em;
+  width: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-decoration: none;
+  padding-top: 0.75em;
+  color: black;
+}
+
 nav {
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
+  width: 90%;
   margin: 0px auto 0px auto;
   height: 2em;
   padding-bottom: 1em;
 }
 .name{
-  font-size: 21px !important;
+  font-size: 22px !important;
+  font-weight: normal;
+  text-align: center;
 }
 .nav_links:hover {
   color: #ff7070;

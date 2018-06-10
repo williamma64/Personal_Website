@@ -14,53 +14,46 @@
   <body>
     <div class="page" id="resume">
       <header>
+        <h1 class="name">William Ma</h1>
         <nav>
           <a class="nav_links" href="./index.html">Home</a>
+          <a class="nav_links" href="./biography.html">Biography</a>
           <a class="nav_links" href="./portfolio.html">Portfolio</a>  
-          <a>William Ma</a>
           <a class="nav_links" id="curr_html">Resume</a>
-          <a class="nav_links" href="./contact.html">Contact</a>
+          <a class="nav_links" href="./cover_letter.html">Cover Letter</a>
         </nav>
       </header>
-      <div id="res_wrapper">
-        <h2>Resume</h2>
-        <div id="skills">
-          <h3>Skills</h3>
-          <ul class="prof">
-            <li>C/C++ - 3 years</li>
-            <li>Java - 3 years</li>
-            <li>Python - 2 years</li>
-            <li>Verilog - 1 year</li>
-            <li>HTML & CSS - 1 year</li>
-            <li>Algorithms - 3 years</li>
-            <li>Data Structures - 3 years</li>
-          </ul>
-        </div>
-        <div id="courses">
-          <h3>Courses Taken</h3>
-          <h4>Maths</h4>
-            <ul>
-              <li>Calculus including Differential Equations, Linear Algebra, Vector Calculus</li>
-              <li>Abstract Algebra</li>
-              <li>Discrete Mathematics</li>
-            </ul>
-          <h4>Sciences</h4>
-          <ul>
-            <li>Physics including Mechanics; Electricity and Magnetism; Waves, Fluids, and Thermodynamics</li>
-            <li>Fundamentals of Electrical Engineering</li>
-            <li>Linear Systems</li>
-            <li>Electrical Components</li>
-            <li>Advanced Data Structures</li>
-            <li>Algorithms</li>
-          </ul>
-        </div>
-        <br />
-        <div id="x_info">
-          <p>I am expected to graduate from Universite of California, San Diego on June 2018 with a degree in Mathematics and Computer Science.</p>
-          <p>Experience and other activities can be found in the portfolio.</p>
-          <p>Here is also a shortened downloadable version of the <a id="res_dl" href="/resume.pdf">resume</a>.</p>
+      <div class="resume-wrapper">
+        <p class="desc">Hi everyone! This is the most up-to-date version of my resume. Click it to read!</p>
+        <img id="myImg" src="resume.png" width="300px" height="368px" border="1">
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption">My updated resume</div>
         </div>
       </div>
     </div>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById('myImg');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+        modal.style.display = "none";
+    }
+    </script>
   </body>
 </html>
