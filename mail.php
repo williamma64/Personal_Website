@@ -26,11 +26,14 @@ if ($message === ''){
   exit();
 }
 $content="From: $name \nEmail: $email \nMessage: $message";
-$recipient = "youremail@here.com";
 $recipient = "william.ma64@gmail.com";
 $mailheader = "From: $email \r\n";
 mail($recipient, $subject, $content, $mailheader) or die("Error!");
 <<<<<<< HEAD
 print json_encode(array('message' => 'Email successfully sent!', 'code' => 1));
 exit();
-?>>>>>>>> 39c8561bd0cdd1b1c71a64bf0fee6b6c9cddc789
+?>
+=======
+echo "Email sent!";
+?>
+>>>>>>> 39c8561bd0cdd1b1c71a64bf0fee6b6c9cddc789
