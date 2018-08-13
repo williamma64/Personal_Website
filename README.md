@@ -4,7 +4,12 @@ Hello everyone! This is my ongoing project of my personal website. After I read 
 started reading about bootstrap and other html, css, and js libraries. This is my attempt at incorporating them
 into my personal website.
 
+See it for yourself!
+
+[my website](https://williamma.org/)
+
 Resources used:
+
 [bootstrap 4.1.1](https://getbootstrap.com/)
 I used bootstrap for their responsive sizing and spacing modules, and their navbar template.
 
@@ -14,7 +19,7 @@ I used fontawesome for their social media font icons.
 [mdbootstrap](https://mdbootstrap.com/)
 I used mdbootstrap for animations and other design nuances.
 
-My website is currently running using Apache2 on a Google Compute Instance.
+My website is currently running using Apache2 on a Google Compute Instance under the domain name I purchased.
 
 My current issue is that my contact page isn't necessarily what I would like it to be. I wanted a form
 that would be able to take in info, validate it, and send an email to myself. I tried to use php to
