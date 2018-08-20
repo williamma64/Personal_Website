@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+
+<html>
+  <title>Software Engineer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="William Ma">
+  
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/all.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/mdb.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/style.min.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/manual.css' %}">
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light mx-auto" style="background-color: #ffffff">
+      <div class="container">
+        <a class="navbar-brand" href="#">William Ma</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="{% url 'biography' %}">Biography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/william-ma-856aa27b/"><i class="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/williamma64"><i class="fab fa-github-square fa-lg"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="row my-lg-5 my-3">
+    </div>
+    <div class="row my-lg-5 animated fadeInUp">
+      <div class="col-lg-4 col-md-7 offset-md-1 offset-lg-2">
+        <img src="{% static 'webpages/assets/20170924_180330.jpg' %}" class="rounded mx-auto d-block border img-fluid mw-50">
+      </div>
+      <div class="col-lg-5 col-md-3 pt-lg-5 mt-sm-2 mt-xs-2 mx-2">
+        <p class="pt-lg-5">Hi, I am William Ma.
+        <br class="rwd-break"> I am a Mathematics - Computer Science graduate from UCSD.
+        <br class="rwd-break"> My interests lie heavily in technology, culture, and television.
+        <br class="rwd-break"> I hope to shape technology to better help people.</p>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{% static 'webpages/js/jquery-3.3.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webpages/js/all.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webpages/js/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webpages/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'webpages/js/mdb.min.js' %}"></script>
+  </body>
+</html>
