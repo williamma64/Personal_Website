@@ -6,6 +6,9 @@ from django.conf import settings
 
 import requests
 
+# These are the views for the main website. They are all TemplateViews except 
+# for the contact page. The contact page make a request to Google reCaptcha and
+# SendGrid to fulfill it's email functionality.
 
 class IndexView(generic.TemplateView):
   template_name = 'webpages/index.html'
@@ -31,7 +34,7 @@ class ContactView(generic.edit.FormView):
       send_mail(form.cleaned_data['subject'],
                 form.cleaned_data['message'],
                 form.cleaned_data['email'],
-                ['williamma64@gmail.com'],
+                [settings.MY_EMAIL],
                 fail_silently=False)
       return HttpResponseRedirect('success')
     else:

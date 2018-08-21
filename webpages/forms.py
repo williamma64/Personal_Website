@@ -1,5 +1,7 @@
 from django import forms
 
+# This is the ContactForm
+
 class ContactForm(forms.Form):
 
   success = ""
