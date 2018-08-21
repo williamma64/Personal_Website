@@ -13,8 +13,6 @@
   <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/style.min.css' %}">
   <link rel="stylesheet" type="text/css" href="{% static 'webpages/css/manual.css' %}">
 
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-
   <body>
     <nav class="navbar navbar-expand-lg navbar-light mx-auto" style="background-color: #ffffff">
       <div class="container">
@@ -35,7 +33,7 @@
               <a class="nav-link" href="{% url 'portfolio' %}">Portfolio</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link active" href="#">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link active" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <div class="social-media">
@@ -48,57 +46,9 @@
 
     <div class='container'>
 
-      <section class="section card card-body mt-5">
-        <h2 class="section-heading h1-responsive text-center mb-5">Contact me</h2>
-        <div class="row">
-          <div class="col-md-12 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" method="POST">{% csrf_token %}
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    {{ form.name }}
-                    <label for="name" class="">Your name</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="md-form mb-0">
-                    {{ form.email }}
-                    <label for="email" class="">Your email</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="md-form mb-0">
-                    {{ form.subject }}
-                    <label for="subject" class="">Subject</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="md-form mb-0">
-                    {{ form.message }}
-                    <label for="message" class="">Message</label>
-                  </div>
-               </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="g-recaptcha mt-1" data-sitekey="6LdnP2sUAAAAAEIIBNZJHVmxSr-cuuiooe6rAWX3"></div>
-                </div>
-                <div class="col-md-12">
-                  <button type="submit" class="btn btn-deep-orange z-depth-1a waves-effect waves-light float-md-right">Send</button>
-                </div>
-                {% if form.non_field_errors %}
-                  {% for error in form.non_field_errors %}
-                    <div class="col-md-12"><p class="text-center text-danger">{{ error|escape }}</p></div>
-                  {% endfor %}
-                {% endif %}
-              </div>
-            </form>
-          </div>
-        </div>
+      <section class="section mt-5">
+        <h2 class="section-heading h1-responsive text-center mb-5">Message Sent!</h2>
+        <h4 class="text-center">I will try to respond to you soon. Thank you.</h4>
       </section>
     </div>
     <script type="text/javascript" src="{% static 'webpages/js/jquery-3.3.1.min.js' %}"></script>
